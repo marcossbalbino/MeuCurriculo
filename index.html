@@ -1,48 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Curriculo</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Currículo de [Seu Nome]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid">
-      <header>
-        <!-- Aqui vai o menu de navegação -->
-      </header>
-    <div>
-    <div class="container">
-      <main>
-        <section>
-         <div class="row">
-          <div>
-           <h2>Sobre Mim</h2>
-          </div>
-         <div>
-          <div class="row">
-            <div class="col">
-              <!-- Aqui aparece minha descrição -->
 
-            </div>
-          </div>
-           
-        <section>
-        <section>
-          <div class="row">
-            </div>
-             <h2>Meus Projetos</h2>
-            <div>
+<header>
+    <h1>[Seu Nome]</h1>
+    <p>Email: seuemail@example.com | Telefone: (00) 00000-0000</p>
+</header>
 
-          </div>
-        <section>
-      </main>
-    </div>
-     <div class="container-fluid">
-       <footer>
-        <!-- Aqui vai o rodapé -->
-       </footer>
-     </div>
-   <script> scr="js/bootstrap.js"</script>
-<body>
+<nav>
+    <ul>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+    </ul>
+</nav>
+
+<section id="resumo">
+    <h2>Resumo Profissional</h2>
+    <p>Sou um profissional com [número] anos de experiência em [sua área]. Tenho habilidades em [competências principais] e estou sempre buscando oportunidades de crescimento.</p>
+</section>
+
+<section id="experiencia">
+    <h2>Experiência</h2>
+    <ul>
+        <li>
+            <strong>Cargo - Empresa</strong> (Ano - Ano)
+            <p>Descreva suas responsabilidades e conquistas nesta função.</p>
+        </li>
+        <li>
+            <strong>Cargo - Empresa</strong> (Ano - Ano)
+            <p>Descreva suas responsabilidades e conquistas nesta função.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="educacao">
+    <h2>Educação</h2>
+    <ul>
+        <li>
+            <strong>Curso - Instituição</strong> (Ano - Ano)
+        </li>
+        <li>
+            <strong>Curso - Instituição</strong> (Ano - Ano)
+        </li>
+    </ul>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>Habilidade 1</li>
+        <li>Habilidade 2</li>
+        <li>Habilidade 3</li>
+        <li>Habilidade 4</li>
+    </ul>
+</section>
+
+<footer>
+    <p style="text-align: center; padding: 20px; background: #333; color: #fff;">Copyright © 2024 [Seu Nome]</p>
+</footer>
+
+</body>
 </html>
