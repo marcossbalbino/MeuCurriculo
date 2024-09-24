@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo do Marcos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            scroll-behavior: smooth; 
+        }
+        header {
+            background: #5e4b8d; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #4b3d6c; 
+            animation: slideIn 0.5s ease-out;
+        }
+        header img {
+            width: 100px; 
+            border-radius: 50%; 
+            margin-bottom: 10px;
+        }
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards;
+            animation-delay: 0.2s; 
+        }
+        h2 {
+            color: #5e4b8d; 
+            border-bottom: 2px solid #4b3d6c; 
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #343a40;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background: #5e4b8d; 
+                top: 50px;
+                width: 100%;
+                left: 0;
+                z-index: 100;
+            }
+            nav ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .menu-active {
+                display: flex;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="mm.jpg" alt="Marcos"> 
+    <h1>Marcos Paulo Henrique Balbino</h1>
+    <p>Email: mpbalbino123@gmail.com| Telefone: (11) 95117-3549</p>
+    <p>Instagram: <a href="https://www.instagram.com/marcossbalbino/" style="color: #fff;">instagram.com/Marcossbalbino</a> | GitHub: <a href="https://github.com/marcossbalbino" style="color: #fff;">github./marcossbalbino</a></p>
+</header>
+
+<nav>
+    <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+    <ul id="menu">
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+</nav>
+
+<section id="resumo">
+    <h2>Resumo Profissional</h2>
+    <p>Profissional com 1 ano de experiência em marketing digital. Sou apaixonado por fotografia e possuo habilidades em edições de vídeos. Estou em busca de novos desafios que me permitam crescer e contribuir para a equipe.</p>
+</section>
+
+<section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <ul>
+        <li>
+            <strong>marketing digital - vereador - Marcio Bertucci</strong> (2020 - 2024)
+            <p>• Tinha o trabalho de cuidar e coordenar as redes, site oficial, instagram, X, facebook, ganhei bastante conhecimento e me apaixonei pela área.</p>
+        </li>
+        <li>
+            <strong>Segurança de site - Espaço laser</strong> (2022 - 2024)
+            <p>• Não deixar o site ser hackeado ou sair fora do ar, aprendi bastante sobre progamação enquanto estive lá.</p>
+        </li>
+    </ul>
+</section>
+
+<section id="educacao">
+    <h2>Educação</h2>
+    <ul>
+        <li>
+            <strong> Ensino fundamental - Colegio Elite Mauá</strong> (2017 -2023 )
+        </li>
+        <li>
+            <strong>Bombeiro mirim - Bombeiro Mauá</strong> (2019 - 2020)
+        </li>
+    </ul>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>VideoMaker - Faço vídeos interessantes, ja fiz mídias pro time Corinthians </li>
+        <li>Mexo com banco de dados - Armazenar arquivo, nomes e dados</li>
+    </ul>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <ul>
+        <li>
+            <strong>Sinta-se nos estadios</strong> - trazer o torcedopr de casa mais próximo do time com filmagens.
+        </li>
+
+    </ul>
+</section>
+
+<section id="referencias">
+    <h2>Referências</h2>
+    <p>Disponíveis mediante solicitação. Para referências, entre em contato com [nome, cargo, empresa].</p>
+</section>
+
+<footer>
+    <p>Copyright © 2024 [Seu Nome]</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('menu-active');
+    }
+</script>
+
+</body>
+</html>
