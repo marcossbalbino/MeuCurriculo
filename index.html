@@ -3,87 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo de [Seu Nome]</title>
+    <title>Currículo do Marcos</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
+            color: #343a40;
+            scroll-behavior: smooth; 
         }
         header {
-            background: #333;
+            background: #5e4b8d; 
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
+            border-bottom: 4px solid #4b3d6c; 
+            animation: slideIn 0.5s ease-out;
+        }
+        header img {
+            width: 100px; 
+            border-radius: 50%; 
+            margin-bottom: 10px;
         }
         nav {
             margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
         }
         nav ul li {
-            display: inline;
             margin-right: 20px;
         }
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background 0.3s, transform 0.2s;
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
         }
         section {
             margin: 20px;
             padding: 20px;
             background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards;
+            animation-delay: 0.2s; 
         }
         h2 {
-            color: #333;
+            color: #5e4b8d; 
+            border-bottom: 2px solid #4b3d6c; 
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #343a40;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background: #5e4b8d; 
+                top: 50px;
+                width: 100%;
+                left: 0;
+                z-index: 100;
+            }
             nav ul li {
-                display: block;
                 margin: 10px 0;
+                text-align: center;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .menu-active {
+                display: flex;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
 </head>
 <body>
 
+    
 <header>
-    <h1>[Seu Nome]</h1>
-    <p>Email: seuemail@example.com | Telefone: (00) 00000-0000</p>
+    <img src="mm.jpg" alt="Marcos"> 
+    <h1>Marcos Paulo Henrique Balbino</h1>
+    <p>Email: mpbalbino123@gmail.com| Telefone: (11) 95117-3549</p>
+    <p>Instagram: <a href="https://www.instagram.com/marcossbalbino/" style="color: #fff;">instagram.com/Marcossbalbino</a> | GitHub: <a href="https://github.com/marcossbalbino" style="color: #fff;">github./marcossbalbino</a></p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#resumo">Sobre mim</a>
+              <a class="nav-link" href="#experiencia">experiencia</a>
+              <a class="nav-link" href="#educacao">educação</a>
+              <a class="nav-link" href="#habilidades">habilidades</a>
+              <a class="nav-link" href="#projetos">projetos</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#resumo">Resumo</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#educacao">Educação</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-    </ul>
-</nav>
-
 <section id="resumo">
-    <h2>Resumo Profissional</h2>
-    <p>Sou um profissional com [número] anos de experiência em [sua área]. Tenho habilidades em [competências principais] e estou sempre buscando oportunidades de crescimento.</p>
+    <h2>Sobre mim</h2>
+    <p>Sou um aluno da etec MCM, nascido em 26/12/2008 em Santo André, gosto muito da área da tecnologia e sou muito fã da profissão Jornalismo, e faço mídias como: vídeos e fotos profissional .</p>
 </section>
 
 <section id="experiencia">
-    <h2>Experiência</h2>
+    <h2>Experiência Profissional</h2>
     <ul>
         <li>
-            <strong>Cargo - Empresa</strong> (Ano - Ano)
-            <p>Descreva suas responsabilidades e conquistas nesta função.</p>
+            <strong>marketing digital - vereador - Marcio Bertucci</strong> (2020 - 2024)
+            <p>• Tinha o trabalho de cuidar e coordenar as redes, site oficial, instagram, X, facebook, ganhei bastante conhecimento e me apaixonei pela área.</p>
         </li>
         <li>
-            <strong>Cargo - Empresa</strong> (Ano - Ano)
-            <p>Descreva suas responsabilidades e conquistas nesta função.</p>
+            <strong>Segurança de site - Espaço laser</strong> (2022 - 2024)
+            <p>• Não deixar o site ser hackeado ou sair fora do ar, aprendi bastante sobre progamação enquanto estive lá.</p>
         </li>
     </ul>
 </section>
@@ -92,10 +173,10 @@
     <h2>Educação</h2>
     <ul>
         <li>
-            <strong>Curso - Instituição</strong> (Ano - Ano)
+            <strong> Ensino fundamental - Colegio Elite Mauá</strong> (2017 -2023 )
         </li>
         <li>
-            <strong>Curso - Instituição</strong> (Ano - Ano)
+            <strong>Ensino Médio - Etec MCM</strong> (2024 - 2027)
         </li>
     </ul>
 </section>
@@ -103,16 +184,31 @@
 <section id="habilidades">
     <h2>Habilidades</h2>
     <ul>
-        <li>Habilidade 1</li>
-        <li>Habilidade 2</li>
-        <li>Habilidade 3</li>
-        <li>Habilidade 4</li>
+        <li>VideoMaker - Faço vídeos interessantes, ja fiz mídias pro time Corinthians </li>
+        <li>Mexo com banco de dados - Armazenar arquivo, nomes e dados</li>
+    </ul>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <ul>
+        <li>
+            <strong>Olhe para fora</strong> - Criar um curta-metragem que mostre algo legal sobre a nossa comunidade, como histórias, tradições ou até desafios que as pessoas enfrentam. É uma ótima chance para filmar e editar de um jeito divertido!
+        </li>
+
     </ul>
 </section>
 
 <footer>
-    <p style="text-align: center; padding: 20px; background: #333; color: #fff;">Copyright © 2024 [Seu Nome]</p>
+    <p>Copyright © 2024 Marcos Paulo Henrique Balbino</p>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('menu-active');
+    }
+</script>
 
 </body>
 </html>
